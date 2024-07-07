@@ -5,5 +5,5 @@
     <a href='https://github.com/yangqy1110' target='_blank'>Qinyu Yang</a><sup>*</sup> &nbsp;
 </div>
 <div>
-    <sup>#</sup>First Author &nbsp; <sup>#</sup> Corresponding Author &nbsp; 
+    <sup>#</sup>First Author, &nbsp; <sup>#</sup> Corresponding Author, &nbsp; 
 </div>
