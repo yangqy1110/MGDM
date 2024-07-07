@@ -111,4 +111,26 @@ mpiexec -n $gpu_num python classifier_train.py                              # mu
 
 Other hyperparameters can be found in `def diffusion_defaults()` and `classifier_defaults()` in `guided_diffusion/script_util.py`.
 
+## 🏞️ Step 2: Two-stage guidance Sampling
 
+#### Stage 1. Generation
+```
+(CUDA_VISIBLE_DEVICES=$device )python classifier_or_cfg_sample.py --single_gpu True # specific single gpu(default is 0)
+```
+
+```
+--num_classes                   # Several classification questions. Default is 2.
+```
+
+Other hyperparameters can be found in `config/global_settings.py`.
+
+#### Stage 2. Disturbance
+```
+(CUDA_VISIBLE_DEVICES=$device )python dual_bridge_sample.py --single_gpu True # specific single gpu(default is 0)
+```
+
+```
+--num_classes                   # Several classification questions. Default is 2.
+```
+
+Other hyperparameters can be found in `config/global_settings.py`.
