@@ -12,3 +12,12 @@
   
 The work is mainly completed by [Qinyu Yang](https://github.com/yangqy1110) and [Yuheng Fan](https://github.com/yangqy1110/MGDM) under the careful guidance of [Yinmin Luo](https://scholar.google.com.hk/citations?user=InHF3ykAAAAJ&hl=zh-CN).
 </div>
+
+## Introduction
+In this work, we first conducted an analysis on previous guidance as well as its contributions on further applications from the perspective of data distribution. To synthesize samples which can help downstream applications, we then introduce uncertainty guidance in each sampling step and design an uncertainty-guided diffusion models.
+
+<p align="center">
+  <img src="assets/images/pipeline.png">
+</p>
+
+Furthermore, we provide a theoretical guarantee for general gradient guidance in diffusion models, which would benefit future research on investigating other forms of measurement guidance for specific generative tasks.
