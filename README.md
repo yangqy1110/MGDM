@@ -43,7 +43,7 @@ pip install torchsampler
 
 ## 💫 Step 1: Pre-training
 
-### 1. Diffusion Model
+#### 1. Diffusion Model
 
 ```Python
 (CUDA_VISIBLE_DEVICES=$device )python image_train.py --single_gpu True # specific single gpu(default is 0)
@@ -76,3 +76,39 @@ mpiexec -n $gpu_num python image_train.py                              # multi-g
 ```
 
 Other hyperparameters can be found in `def diffusion_defaults()` and `def model_and_diffusion_defaults()` in `guided_diffusion/script_util.py`.
+
+#### 2. Classifier Model
+
+```Python
+(CUDA_VISIBLE_DEVICES=$device )python classifier_train.py --single_gpu True # specific single gpu(default is 0)
+mpiexec -n $gpu_num python classifier_train.py                              # multi-gpu parallel
+```
+
+```
+--data_dir           # Path to training data.
+--val_data_dir       # Path to val data.
+--noised             # Whether to add noise, default is True.
+--iterations         # Total training steps. default is 200001.
+--lr                 # learning rate, default is 3e-4.
+--weight_decay       # Default is 0.00001.
+--batch_size         # Default is 1.
+--microbatch         # Default is -1, disables microbatches.
+--schedule_sampler   # Default is "uniform".
+--resume_checkpoint  # resume train
+--log_interval       # How many steps to print a log? Default is 50.
+--eval_interval      # How many steps to eval? Default is 50.
+--save_interval      # How many steps to save a checkpoint? Default is 10000.
+--log_root           # FolderPath of log and checkpoint". Default is "../logs_clas".
+--single_gpu         # Whether to specify a single GPU. The default value is False.
+--imablancedsample   # Whether to use torchsampler.ImbalancedDatasetSampler. The default value is False. 
+                     # Not available when using multiple GPUs. Default is True.
+--model_path         # Initial model weight pth file path, default is "".
+--single_gpu         # Whether to specify a single GPU. The default value is False.
+--image_size         # size of image. Default is 128.
+--in_channels        # The number of channels entered into the network. Default is 3.
+--num_classes        # Several classification questions. Default is 2.
+```
+
+Other hyperparameters can be found in `def diffusion_defaults()` and `classifier_defaults()` in `guided_diffusion/script_util.py`.
+
+
