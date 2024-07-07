@@ -46,5 +46,5 @@ pip install torchsampler
 
 ```Python
 (CUDA_VISIBLE_DEVICES=$device )python image_train.py --single_gpu True # specific single gpu(default is 0)
-mpiexec -n $gpu_num python image_train.py # multi-gpu parallel
+mpiexec -n $gpu_num python image_train.py                              # multi-gpu parallel
 ```
