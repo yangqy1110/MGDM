@@ -28,7 +28,7 @@ Furthermore, we provide a theoretical guarantee for general gradient guidance in
 
 ```
 git clone https://github.com/yangqy1110/MGDM.git
-cd ./MGDM
+cd ./MGDM/scripts
 ```
 
 #### 2. Environment Setup
@@ -41,3 +41,10 @@ pip install torchsampler
 ```
 
 ## 💫 Step 1: Pre-training
+
+### 1. Diffusion Model
+
+```Python
+(CUDA_VISIBLE_DEVICES=$device )python image_train.py --single_gpu True # specific single gpu(default is 0)
+mpiexec -n $gpu_num python image_train.py # multi-gpu parallel
+```
