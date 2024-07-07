@@ -137,7 +137,7 @@ Other hyperparameters can be found in `def diffusion_defaults()` and `classifier
 ## 🏞️ Step 2: Two-stage guidance Sampling
 
 #### Stage 1. Generation
-```
+```Python
 (CUDA_VISIBLE_DEVICES=$device )python classifier_or_cfg_sample.py --single_gpu True # specific single gpu(default is 0)
 ```
 
@@ -148,7 +148,7 @@ Other hyperparameters can be found in `def diffusion_defaults()` and `classifier
 Other hyperparameters can be found in `config/global_settings.py`.
 
 #### Stage 2. Disturbance
-```
+```Python
 (CUDA_VISIBLE_DEVICES=$device )python dual_bridge_sample.py --single_gpu True # specific single gpu(default is 0)
 ```
 
