@@ -73,6 +73,6 @@ mpiexec -n $gpu_num python image_train.py                              # multi-g
 --in_channels           # The number of channels entered into the network. Default is 3.
 --num_classes           # Several classification questions. Default is 2.
 --prob_uncon            # Probability of classless embedding in training. Default is 0.
-
-Other hyperparameters can be found in def diffusion_defaults() and def model_and_diffusion_defaults() in guided diffusion/script_util.py
 ```
+
+Other hyperparameters can be found in `def diffusion_defaults()` and `def model_and_diffusion_defaults()` in `guided_diffusion/script_util.py`.
