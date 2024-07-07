@@ -41,6 +41,29 @@ conda install mpi4py
 pip install torchsampler
 ```
 
+#### 3. Training Data
+
+Training data should be saved in the following form:
+```
+|--dataset
+  |--0
+    |----0_001.png
+    |----0_002.png
+    |----0_003.png
+    |----...
+  |--1
+    |----1_001.png
+    |----1_002.png
+    |----1_003.png
+    |----...
+  |--2
+    |----2_001.png
+    |----2_002.png
+    |----2_003.png
+    |----...
+  |--...
+```
+
 ## 💫 Step 1: Pre-training
 
 #### 1. Diffusion Model
@@ -119,7 +142,7 @@ Other hyperparameters can be found in `def diffusion_defaults()` and `classifier
 ```
 
 ```
---num_classes                   # Several classification questions. Default is 2.
+--num_classes           # Several classification questions. Default is 2.
 ```
 
 Other hyperparameters can be found in `config/global_settings.py`.
@@ -130,7 +153,7 @@ Other hyperparameters can be found in `config/global_settings.py`.
 ```
 
 ```
---num_classes                   # Several classification questions. Default is 2.
+--num_classes           # Several classification questions. Default is 2.
 ```
 
 Other hyperparameters can be found in `config/global_settings.py`.
