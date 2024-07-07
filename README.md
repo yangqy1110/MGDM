@@ -1,4 +1,2 @@
-# MGDM
-Official Code for Measurement Guidance in Difffusion Models: Insight from Medical Image Synthesis
+  <h2>🦄️ Diffusion Models, Measurement, Uncertainty Guidance, Medical Image Synthesis, Controllable Generation (TPMAI 2024) </h2>
 
-Update[2024.07.06]: Training and sampling codes will be uploaded in the next two days.
