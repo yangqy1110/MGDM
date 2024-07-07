@@ -35,6 +35,7 @@ cd ./MGDM/scripts
 
 First configure the environment according to [guided-diffusion](https://github.com/openai/guided-diffusion) and [improved-diffusion](https://github.com/openai/improved-diffusion).
 ```
+# Finally:
 pip install blofile
 conda install mpi4py
 pip install torchsampler
@@ -47,4 +48,31 @@ pip install torchsampler
 ```Python
 (CUDA_VISIBLE_DEVICES=$device )python image_train.py --single_gpu True # specific single gpu(default is 0)
 mpiexec -n $gpu_num python image_train.py                              # multi-gpu parallel
+```
+
+```
+--data_dir              # Path to training data.
+--schedule_sampler      # Default is "uniform".
+--lr                    # learning rate, default is 1e-4.
+--weight_decay          # Default is 0.00001.
+--lr_anneal_steps       # Total training steps. The default value is False, which means unlimited.
+--batch_size            # Default is 1.
+--microbatch            # Default is -1, disables microbatches.
+--ema_rate              # Default is "0.9999",  # comma-separated list of EMA values.
+--log_interval          # How many steps to print a log? default is 10.
+--save_interval         # How many steps to save a checkpoint? default is 10000.
+--resume_checkpoint     # Initial model weight pth file path, default is "".
+--use_fp16              # Default is False.
+--fp16_scale_growth     # Default is 1e-3.
+--log_root              # FolderPath of log and checkpoint "../logs".
+--imablancedsample      # Whether to use torchsampler.ImbalancedDatasetSampler. The default value is False. 
+                        # Not available when using multiple GPUs. Default is True.
+--random_flip           # Whether to use np.fliplr.
+--single_gpu            # Whether to specify a single GPU. The default value is False.
+--image_size            # size of image. Default is 128.
+--in_channels           # The number of channels entered into the network. Default is 3.
+--num_classes           # Several classification questions. Default is 2.
+--prob_uncon            # Probability of classless embedding in training. Default is 0.
+
+Other hyperparameters can be found in def diffusion_defaults() and def model_and_diffusion_defaults() in guided diffusion/script_util.py
 ```
