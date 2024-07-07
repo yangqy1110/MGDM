@@ -21,3 +21,23 @@ In this work, we first conducted an analysis on previous guidance as well as its
 </p>
 
 Furthermore, we provide a theoretical guarantee for general gradient guidance in diffusion models, which would benefit future research on investigating other forms of measurement guidance for specific generative tasks.
+
+## 🕹️ Code and Environment
+
+#### 1. Clone the Repository
+
+```
+git clone https://github.com/yangqy1110/MGDM.git
+cd ./MGDM
+```
+
+#### 2. Environment Setup
+
+First configure the environment according to [guided-diffusion](https://github.com/openai/guided-diffusion) and [improved-diffusion](https://github.com/openai/improved-diffusion).
+```
+pip install blofile
+conda install mpi4py
+pip install torchsampler
+```
+
+## 💫 Step 1: Pre-training
