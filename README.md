@@ -10,5 +10,5 @@
 <div>
     <sup>*</sup>First Author, &nbsp; <sup>#</sup> Corresponding Author. &nbsp;
   
-The work is mainly completed by Qinyu Yang and Yuheng Fan under the careful guidance of Yinmin Luo.
+The work is mainly completed by [Qinyu Yang](https://github.com/yangqy1110) and [Yuheng Fan](https://github.com/yangqy1110/MGDM) under the careful guidance of [Yinmin Luo](https://scholar.google.com.hk/citations?user=InHF3ykAAAAJ&hl=zh-CN).
 </div>
