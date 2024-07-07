@@ -157,3 +157,18 @@ Other hyperparameters can be found in `config/global_settings.py`.
 ```
 
 Other hyperparameters can be found in `config/global_settings.py`.
+
+## Citation
+```
+@article{luo2024measurement,
+  title={Measurement Guidance in Diffusion Models: Insight from Medical Image Synthesis},
+  author={Luo, Yimin and Yang, Qinyu and Fan, Yuheng and Qi, Haikun and Xia, Menghan},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2024},
+  publisher={IEEE}
+}
+```
+
+## Acknowledgements
+
+We sincerely appreciate the code release of the following projects: [guided-diffusion](https://github.com/openai/guided-diffusion), [improved-diffusion](https://github.com/openai/improved-diffusion) and [ddib](https://github.com/suxuann/ddib).
