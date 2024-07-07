@@ -8,5 +8,6 @@
     <a href='https://menghanxia.github.io/' target='_blank'>Menghan Xia</a> &nbsp;
 </div>
 <div>
-    <sup>*</sup>First Author, &nbsp; <sup>#</sup> Corresponding Author, &nbsp; 
+    <sup>*</sup>First Author, &nbsp; <sup>#</sup> Corresponding Author. &nbsp; 
+The work is mainly completed by Qinyu Yang and Yuheng Fan under the careful guidance of Yinmin Luo.
 </div>
