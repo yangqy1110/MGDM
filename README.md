@@ -1,4 +1,4 @@
-  <h2>🦄️ Measurement Guidance in Diffusion Models: Insight from Medical Image Synthesis (TPMAI 2024) </h2>
+  <h2>🦄️ Measurement Guidance in Diffusion Models: Insight from Medical Image Synthesis (TPAMI 2024) </h2>
 
 <div>
     <a href='https://scholar.google.com.hk/citations?user=InHF3ykAAAAJ&hl=zh-CN' target='_blank'>Yinmin Luo</a> <sup>*,#</sup> &nbsp;
